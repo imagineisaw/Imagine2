@@ -16,6 +16,13 @@
       background-color: #2d2d2d;
       padding: 20px;
       text-align: center;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
     }
 
     h1 {
@@ -40,6 +47,46 @@
     main {
       padding: 20px;
       text-align: center;
+      animation: slideIn 1s forwards;
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(100px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h2 {
+      font-size: 36px;
+      margin: 0;
+      animation: pulseText 2s infinite;
+    }
+
+    @keyframes pulseText {
+      0% { color: #fff; }
+      50% { color: #00ffea; }
+      100% { color: #fff; }
+    }
+
+    p {
+      font-size: 18px;
+      margin: 20px 0;
+    }
+
+    button {
+      background-color: #00ffea;
+      color: #000;
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+      animation: pulseButton 2s infinite;
+    }
+
+    @keyframes pulseButton {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
     }
 
     footer {
